@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #263328;
+    background: #f4f3ed;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 24px 8%;
+    background: white;
+}
+
+header a {
+    color: #263328;
+    text-decoration: none;
+    margin-right: 14px;
+}
+
+.brand {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1050px;
+    margin: 50px auto;
+    padding: 0 22px;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e1e2db;
+    border-radius: 16px;
+    padding: 24px;
+    margin: 20px 0;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 12px;
+    border-radius: 9px;
+    background: #263b2c;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+
+main {
+    max-width: 1200px;
+}
+
+.banner {
+    padding: 100px 50px;
+    color: white;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #000a, #0002), url("imagenes/tainy-banner.png") center / cover;
+}
+
+.banner h1 {
+    font-size: 80px;
+    margin-bottom: 0;
+}
+
+.banner h2 {
+    font-size: 36px;
+}
+
+.banner p {
+    max-width: 500px;
+}
+
+.banner .button {
+    background: white;
+    color: #263328;
+}
+
+.sections {
+    display: flex;
+    gap: 15px;
+}
+
+.sections .card {
+    flex: 1;
+    color: #263328;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media (max-width: 650px) {
+    .banner {
+        padding: 65px 25px;
+    }
+
+    .banner h1 {
+        font-size: 52px;
+    }
+
+    .sections {
+        flex-direction: column;
+        gap: 0;
+    }
+}

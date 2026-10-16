@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #263328;
+    background: #f4f3ed;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 24px 8%;
+    background: white;
+}
+
+header a {
+    color: #263328;
+    text-decoration: none;
+    margin-right: 14px;
+}
+
+.brand {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1050px;
+    margin: 50px auto;
+    padding: 0 22px;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e1e2db;
+    border-radius: 16px;
+    padding: 24px;
+    margin: 20px 0;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 12px;
+    border-radius: 9px;
+    background: #263b2c;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+
+main {
+    max-width: 750px;
+}
+
+.welcome {
+    padding: 85px 20px;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.welcome h1 {
+    font-size: 50px;
+}
+
+.buttons a {
+    margin: 10px;
+}
